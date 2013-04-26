@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>CONTOH COMBO BOX BERANTAI</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="../../ext-4.2.0/resources/css/ext-all.css" />
+        <link rel="stylesheet" type="text/css" href="css/dataView.css" />
+
+        <script type="text/javascript" src="../../ext-4.2.0/ext-all-dev.js"></script>
+
+        <script type="text/javascript" src="js/jsonDataStore.js"></script>
+        <script type="text/javascript" src="js/comboBerantai.js"></script>
+        
+        <script type="text/javascript">
+            Ext.onReady(function() {
+                Ext.scopeResetCSS = true;
+                Ext.QuickTips.init();
+
+                 Ext.create('Ext.panel.Panel', {
+                    title: 'Contoh Combo Berantai',
+                    layout: 'fit',
+                    bodyPadding: 10,
+                    items: [Ext.create('comboBerantai')],
+                    height: 125,
+                    width: 497,
+                    renderTo: document.body
+                });
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
