@@ -15,7 +15,7 @@ Ext.define('jsonDataStore', {
                 reader: {
                     type: 'json',
                     root: 'topics',
-                    totalProperty: 'totalCounts'
+                    totalProperty: 'totalCount'
                 },
                 simpleSortMode: true
             }
